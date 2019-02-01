@@ -1,0 +1,37 @@
+{
+  "name": "oauth-rest-api",
+  "version": "1.0.0",
+  "description": "NodeJS API Starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node --no-warnings --experimental-modules src/index.mjs",
+    "dev": "NODE_ENV=development nodemon --no-warnings --experimental-modules src/index.mjs -watch src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthoiland/oauth-rest-api.git"
+  },
+  "author": "Matt Hoiland <thematthoiland@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthoiland/oauth-rest-api/issues"
+  },
+  "homepage": "https://github.com/matthoiland/oauth-rest-api#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.3",
+    "cucumber": "^5.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.8",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "puppeteer": "^1.11.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "socket.io": "^2.2.0"
+  }
+}
