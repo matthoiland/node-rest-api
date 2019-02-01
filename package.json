@@ -1,5 +1,5 @@
 {
-  "name": "oauth-rest-api",
+  "name": "node-rest-api",
   "version": "1.0.0",
   "description": "NodeJS API Starter",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthoiland/oauth-rest-api.git"
+    "url": "git+https://github.com/matthoiland/node-rest-api.git"
   },
   "author": "Matt Hoiland <thematthoiland@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthoiland/oauth-rest-api/issues"
+    "url": "https://github.com/matthoiland/node-rest-api/issues"
   },
-  "homepage": "https://github.com/matthoiland/oauth-rest-api#readme",
+  "homepage": "https://github.com/matthoiland/node-rest-api#readme",
   "dependencies": {
     "bcrypt": "^2.0.0",
     "body-parser": "^1.18.3",
