@@ -8,6 +8,7 @@ import chalk from 'chalk'
 import compression from 'compression'
 import config from './config'
 import cookies from 'cookie-parser'
+import error from './middleware/error'
 import express from 'express'
 import http from 'http'
 import logger from './services/logger'
@@ -56,6 +57,11 @@ app.use(middleware)
  * Router
  */
 app.use('/', router)
+
+/**
+ * Error middleware
+ */
+app.use(error)
 
 /**
  * Initialize SocketIO

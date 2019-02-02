@@ -10,6 +10,8 @@ import User from './model'
  * Get current authenticated user
  * -----------------------------------------------------------------------------
  */
-export async function getSelf(req, res) {
-  return res.send('from user controller')
+export async function getSelf(req, res, next) {
+
+  // return res.error(401, 'dude')
+  return res.ok({ data: 'sup dude '})
 }
