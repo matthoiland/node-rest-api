@@ -1,1 +1,0 @@
-web: NODE_ENV=production node --no-warnings --experimental-modules src/index.mjs

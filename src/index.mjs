@@ -6,13 +6,15 @@
 import 'dotenv/config'
 import chalk from 'chalk'
 import compression from 'compression'
+import config from './config'
 import cookies from 'cookie-parser'
 import express from 'express'
 import http from 'http'
-import mongoose from 'mongoose'
-import parser from 'body-parser'
-import config from './config'
+import logger from './services/logger'
 import middleware from './middleware'
+import mongoose from 'mongoose'
+import morgan from 'morgan'
+import parser from 'body-parser'
 import router from './router'
 import { initialize } from './services/socket'
 
@@ -39,6 +41,11 @@ app.use(compression())
 app.use(parser.urlencoded({ extended: true }))
 app.use(parser.json())
 app.use(cookies())
+
+/**
+ * Logging
+ */
+app.use(morgan('tiny', { stream: logger.stream }))
 
 /**
  * Middleware
